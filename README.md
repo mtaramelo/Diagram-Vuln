@@ -2,7 +2,6 @@
 # Vulnerability Management — Database Schema
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '18px'}, 'er': {'entityPadding': 20, 'minEntityWidth': 150}}}%%
 erDiagram
   direction LR
 
