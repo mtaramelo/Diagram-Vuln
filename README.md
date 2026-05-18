@@ -188,28 +188,28 @@ erDiagram
     int VulnerabilityID FK
   }
 
-  Baseline ||--o{ Baseline_FC_BB_Mappings : "maps to"
-  FunctionalCluster ||--o{ Baseline_FC_BB_Mappings : "mapped by"
-  BuildingBlock ||--o{ Baseline_FC_BB_Mappings : "mapped by"
-  Baseline ||--o{ Baseline_BB_CC_Mappings : "maps to"
-  Baseline ||--o{ Baseline_BB_ReleasePart_Mappings : "maps to"
-  Baseline ||--o{ Baseline_BB_Assembly_Mappings : "maps to"
-  BuildingBlock ||--o{ Baseline_BB_CC_Mappings : "mapped by"
-  Component ||--o{ Baseline_BB_CC_Mappings : "mapped by"
-  Vulnerability ||--|{ VulnerabilityFound : found
-  Vulnerability ||--|| KnownExploitedVulnerability : has
-  Vulnerability ||--|| Weaponized : has
-  Vulnerability ||--|| ExploitMaturity : has
-  Vulnerability ||--|| Cve : has
-  Vulnerability ||--|| ProofOfConcept : has
-  Component ||--o{ VulnerabilityFound : has
-  Scan ||--o{ VulnerabilityFound : detects
-  Scanner ||--|{ Scan : used
-  Vulnerability ||--|| Cvss : has
-  Cvss ||--|| Cvss4_0 : "can have"
-  Cvss ||--|| Cvss3_0 : "can have"
-  Cvss ||--|| Cvss3_1 : "can have"
-  Cvss ||--|| Cvss2 : "can have"
-  Cvss ||--|| Cvss1 : "can have"
-  Scan }|--|| Baseline : "references"
+  Baseline ||--o{ Baseline_FC_BB_Mappings : " "
+  FunctionalCluster ||--o{ Baseline_FC_BB_Mappings : " "
+  BuildingBlock ||--o{ Baseline_FC_BB_Mappings : " "
+  Baseline ||--o{ Baseline_BB_CC_Mappings : " "
+  Baseline ||--o{ Baseline_BB_ReleasePart_Mappings : " "
+  Baseline ||--o{ Baseline_BB_Assembly_Mappings : " "
+  BuildingBlock ||--o{ Baseline_BB_CC_Mappings : " "
+  Component ||--o{ Baseline_BB_CC_Mappings : " "
+  Vulnerability ||--|{ VulnerabilityFound : " "
+  Vulnerability ||--|| KnownExploitedVulnerability : " "
+  Vulnerability ||--|| Weaponized : " "
+  Vulnerability ||--|| ExploitMaturity : " "
+  Vulnerability ||--|| Cve : " "
+  Vulnerability ||--|| ProofOfConcept : " "
+  Component ||--o{ VulnerabilityFound : " "
+  Scan ||--o{ VulnerabilityFound : " "
+  Scanner ||--|{ Scan : " "
+  Vulnerability ||--|| Cvss : " "
+  Cvss ||--|| Cvss4_0 : " "
+  Cvss ||--|| Cvss3_0 : " "
+  Cvss ||--|| Cvss3_1 : " "
+  Cvss ||--|| Cvss2 : " "
+  Cvss ||--|| Cvss1 : " "
+  Scan }|--|| Baseline : " "
 ```
