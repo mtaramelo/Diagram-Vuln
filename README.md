@@ -2,6 +2,7 @@
 # Vulnerability Management — Database Schema
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px', 'primaryColor': '#1B3A6B', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#378ADD', 'lineColor': '#378ADD'}}}%%
 erDiagram
   direction LR
 
