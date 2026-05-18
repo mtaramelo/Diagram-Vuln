@@ -1,8 +1,7 @@
 # Diagram-Vuln
 # Vulnerability Management — Database Schema
 
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '12px', 'primaryColor': '#2e3092', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#00aeef', 'lineColor': '#00aeef', 'secondaryColor': '#00a54f', 'tertiaryColor': '#333333', 'edgeLabelBackground': '#ffffff', 'attributeBackgroundColorEven': '#f0f8ff', 'attributeBackgroundColorOdd': '#e8f4f8'}}}%%
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '16px', 'primaryColor': '#2e3092', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#00aeef', 'lineColor': '#00aeef', 'edgeLabelBackground': '#ffffff', 'attributeBackgroundColorEven': '#f0f8ff', 'attributeBackgroundColorOdd': '#e8f4f8'}}}%%
 erDiagram
   direction LR
 
@@ -196,20 +195,19 @@ erDiagram
   Baseline ||--o{ Baseline_BB_Assembly_Mappings : "maps to"
   BuildingBlock ||--o{ Baseline_BB_CC_Mappings : "mapped by"
   Component ||--o{ Baseline_BB_CC_Mappings : "mapped by"
-  Vulnerability ||--|{ VulnerabilityFound : found
-  Vulnerability ||--|| KnownExploitedVulnerability : has
-  Vulnerability ||--|| Weaponized : has
-  Vulnerability ||--|| ExploitMaturity : has
-  Vulnerability ||--|| Cve : has
-  Vulnerability ||--|| ProofOfConcept : has
-  Component ||--o{ VulnerabilityFound : has
-  Scan ||--o{ VulnerabilityFound : detects
-  Scanner ||--|{ Scan : used
-  Vulnerability ||--|| Cvss : has
-  Cvss ||--|| Cvss4_0 : "can have"
-  Cvss ||--|| Cvss3_0 : "can have"
-  Cvss ||--|| Cvss3_1 : "can have"
-  Cvss ||--|| Cvss2 : "can have"
-  Cvss ||--|| Cvss1 : "can have"
+  Vulnerability ||--|{ VulnerabilityFound : "found"
+  Vulnerability ||--|| KnownExploitedVulnerability : "has"
+  Vulnerability ||--|| Weaponized : "has"
+  Vulnerability ||--|| ExploitMaturity : "has"
+  Vulnerability ||--|| Cve : "has"
+  Vulnerability ||--|| ProofOfConcept : "has"
+  Component ||--o{ VulnerabilityFound : "has"
+  Scan ||--o{ VulnerabilityFound : "detects"
+  Scanner ||--|{ Scan : "used"
+  Vulnerability ||--|| Cvss : "has"
+  Cvss ||--|| Cvss4_0 : "v4"
+  Cvss ||--|| Cvss3_0 : "v3.0"
+  Cvss ||--|| Cvss3_1 : "v3.1"
+  Cvss ||--|| Cvss2 : "v2"
+  Cvss ||--|| Cvss1 : "v1"
   Scan }|--|| Baseline : "references"
-```
