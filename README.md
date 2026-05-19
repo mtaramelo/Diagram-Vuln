@@ -1,6 +1,6 @@
 # Diagram-Vuln
 # Vulnerability Management — Database Schema
-
+```mermaid
 %%{init: {
   "theme": "base",
   "themeVariables": {
