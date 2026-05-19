@@ -1,6 +1,8 @@
 # Diagram-Vuln
 # Vulnerability Management — Database Schema
 
+# ASML Vulnerability Management — Database Schema
+
 ```mermaid
 %%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '16px', 'primaryColor': '#2e3092', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#00aeef', 'lineColor': '#00aeef', 'edgeLabelBackground': '#ffffff', 'attributeBackgroundColorEven': '#f0f8ff', 'attributeBackgroundColorOdd': '#e8f4f8'}}}%%
 erDiagram
@@ -191,10 +193,10 @@ erDiagram
   Baseline ||--o{ Baseline_FC_BB_Mappings : "maps to"
   FunctionalCluster ||--o{ Baseline_FC_BB_Mappings : "FC ref"
   BuildingBlock ||--o{ Baseline_FC_BB_Mappings : "BB ref"
-  Baseline ||--o{ Baseline_BB_CC_Mappings : "maps to"
+  Baseline ||--o{ Baseline_BB_CC_Mappings : "B-CC"
   Baseline ||--o{ Baseline_BB_ReleasePart_Mappings : "maps to"
   Baseline ||--o{ Baseline_BB_Assembly_Mappings : "maps to"
-  BuildingBlock ||--o{ Baseline_BB_CC_Mappings : "BB ref"
+  BuildingBlock ||--o{ Baseline_BB_CC_Mappings : "BB-CC"
   Component ||--o{ Baseline_BB_CC_Mappings : "CC ref"
   Vulnerability ||--|{ VulnerabilityFound : "found"
   Vulnerability ||--|| KnownExploitedVulnerability : "has"
